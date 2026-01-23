@@ -1,0 +1,1 @@
+{"name":"@trancendos/the-void","version":"1.0.0","description":"The Void - Secure isolated environment","main":"dist/index.js","scripts":{"build":"tsc","dev":"tsx watch src/index.ts"},"license":"MIT"}
