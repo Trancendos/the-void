@@ -1,1 +1,18 @@
-{"name":"@trancendos/the-void","version":"1.0.0","description":"The Void - Secure isolated environment","main":"dist/index.js","scripts":{"build":"tsc","dev":"tsx watch src/index.ts"},"license":"MIT"}
+{
+  "name": "@trancendos/the-void",
+  "version": "1.0.0",
+  "description": "The Void - Secure isolated environment",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "test": "vitest"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "tsx": "^4.0.0",
+    "vitest": "^1.0.0"
+  }
+}
