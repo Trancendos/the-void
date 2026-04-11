@@ -1,4 +1,7 @@
-## 2024-05-21 - Missing Input Validation in Secure Service
-**Vulnerability:** The `VoidService` methods `isolate` and `quarantine` lacked input validation, allowing arbitrary strings to be logged. This could lead to log injection or other injection attacks if the input usage changes.
-**Learning:** Even "secure" isolated environments need explicit validation at the entry points. The assumption of security shouldn't rely on trust.
-**Prevention:** Enforce strict input validation (type, length, content) on all public methods of security-critical services using a centralized validator.
+# Sentinel Journal
+
+
+## 2024-05-22 - Missing Input Validation
+**Vulnerability:** Core service methods accepted arbitrary input strings without validation.
+**Learning:** Even simple logging services can be vectors for attacks if input is unchecked.
+**Prevention:** Enforced strict alphanumeric and length validation on all inputs.
